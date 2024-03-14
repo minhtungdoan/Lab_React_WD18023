@@ -23,7 +23,7 @@ const Header = (props: Props) => {
                         {
                             props.title.map((item, index) => {
                                 return (
-                                    <li className="nav-item">
+                                    <li key={index} className="nav-item">
                                         <a className="nav-link" href="index.html">{item}</a>
                                     </li>
                                 )
